@@ -113,18 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---------- Back to Top Button ----------
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-            backToTopBtn.style.opacity = '1';
-            backToTopBtn.style.pointerEvents = 'auto';
-        } else {
-            backToTopBtn.style.opacity = '0';
-            backToTopBtn.style.pointerEvents = 'none';
-        }
-    });
+    if (window.scrollY > 1000) {
+        backToTopBtn.classList.add('visible');
+    } else {
+        backToTopBtn.classList.remove('visible');
+    }
+});
 
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
     // ---------- Footer Year ----------
     if (currentYearSpan) {
