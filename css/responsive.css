@@ -1,0 +1,103 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-content {
+        align-items: center;
+    }
+    .hero-intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-cta {
+        justify-content: center;
+    }
+    .hero-socials {
+        justify-content: center;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: var(--navbar-height);
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-secondary);
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 0;
+        gap: 20px;
+        transform: translateY(-150%);
+        transition: transform 0.4s ease;
+        z-index: 999;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    .hamburger {
+        display: flex;
+    }
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+    .timeline {
+        padding-left: 15px;
+    }
+    .timeline-item {
+        padding-left: 30px;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .hero-name {
+        font-size: 2rem;
+    }
+    .section {
+        padding: 60px 0;
+    }
+}

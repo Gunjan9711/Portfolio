@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio - BCA Student | Aspiring Software Developer">
+    <meta name="keywords" content="portfolio, BCA, developer, software, student, web development">
+    <meta name="author" content="Rahul Sharma">
+
+    <title>Gunjan Mishra | Portfolio</title>
+
+    <!-- Google Fonts: Poppins for headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Go to home">
+                &lt;<span class="accent-text">GM</span>/&gt;
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#home" role="menuitem" class="nav-link active">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+                <li role="none"><a href="#skills" role="menuitem" class="nav-link">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem" class="nav-link">Projects</a></li>
+                <!-- <li role="none"><a href="#experience" role="menuitem" class="nav-link">Experience</a></li> -->
+                <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+                <!-- ===== FREE SERVICES DROPDOWN ===== -->
+                <li class="nav-item dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdownToggle">
+                        Free Services <i class="fa-solid fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Free services links">
+                        
+                        <li><a href="https://resume-craft-one-chi.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">ResumeCraft</a></li>
+                        <li><a href="https://developers-emergency-kit.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">DevKit</a></li>
+                        <li><a href="https://your-link-3.com" target="_blank" rel="noopener noreferrer"></a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Theme Toggle & Hamburger -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+                    <i class="fa-solid fa-sun" id="themeIcon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== END NAVBAR ===== -->
+
+
+    <!-- ===== HERO / HOME SECTION ===== -->
+    <section class="hero-section section" id="home">
+        <div class="hero-container reveal">
+            <div class="hero-content">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1 class="hero-name">
+                    Gunjan <span class="accent-text">Mishra</span>
+                </h1>
+                <p class="hero-tagline">
+
+                    BCA Student &amp; Aspiring Full-Stack Developer
+                </p>
+                <p class="hero-intro">
+
+                    I build clean, responsive web experiences with modern technologies.
+                    Passionate about turning ideas into elegant code.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-eye"></i> View Projects
+                    </a>
+
+                    <a href="assets/Gunjan_Mishra_Resume.pdf" class="btn btn-outline" download>
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <!-- Social Links (Hero) -->
+                <div class="hero-socials">
+
+                    <a href="https://github.com/gunjan9711" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/gunjan-mishra-325b87410" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a> -->
+                    <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" title="Twitter/X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <!-- Hero Profile Photo -->
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!--
+                        TODO: Replace assets/profile.jpg with your actual photo.
+                        Recommended: square aspect ratio, at least 400x400px.
+                    -->
+                    <img src="assets/profile.jpeg" alt="Gunjan Mishra - Profile Photo" loading="eager">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll-down indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+    <!-- ===== END HERO SECTION ===== -->
+
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section section" id="about">
+        <div class="section-container">
+            <h2 class="section-title reveal">
+                About <span class="accent-text">Me</span>
+            </h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+
+                    <p>
+                        Hi! I'm <strong>Gunjan Mishra</strong>, a passionate <strong>BCA (Bachelor of Computer
+                            Applications)</strong>
+                        student with a deep curiosity for technology and problem-solving. My journey into the world of
+                        software development started with a simple "Hello, World!" program, and since then, I've been
+                        hooked on building things that live on the internet.
+                    </p>
+                    <p>
+                        I specialize in <strong>web development</strong>, crafting responsive and user-friendly
+                        interfaces
+                        using modern HTML, CSS, and JavaScript. I'm also exploring backend technologies like
+                        <strong>Python, Java, and C++</strong> to become a well-rounded full-stack developer.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new tech trends, contributing to open-source
+                        projects on GitHub, playing chess, or binge-watching sci-fi series. I believe in
+                        <strong>continuous learning</strong> and am always eager to take on challenges that push
+                        me out of my comfort zone.
+                    </p>
+
+                    <!-- Education Summary -->
+                    <div class="education-box">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+
+                        <ul>
+                            <li>
+                                <strong>Bachelor of Computer Applications (BCA)</strong>
+                                <span>2025 - 2028</span>
+                                <p>Meena Shah Institute of Technology and Management, Gonda, Uttar Pradesh<em></em></p>
+                            </li>
+                            <li>
+                                <strong>Senior Secondary (XII) — UP Board</strong>
+                                <span>2024 - 2025</span>
+                                <p>Girls Government Inter College, Gonda, Uttar Pradesh <em>Scored: 70%</em></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fun facts / personality highlights -->
+                <div class="about-highlights reveal">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Clean Code</h4>
+                        <p>I believe readable code is better than clever code.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>Team Player</h4>
+                        <p>Love collaborating & learning from peers.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h4>Problem Solver</h4>
+                        <p>Enjoy tackling algorithmic challenges on LeetCode.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-music"></i>
+                        <h4>Music Lover</h4>
+                        <p>Lo-fi beats are my coding soundtrack. 🎧</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END ABOUT SECTION ===== -->
+
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills-section section" id="skills">
+        <div class="section-container">
+            <h2 class="section-title reveal">
+                My <span class="accent-text">Skills</span>
+            </h2>
+            <p class="section-subtitle reveal">Technologies and tools I've been working with</p>
+
+            <div class="skills-grid reveal">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Languages</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Python</span>
+                        
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-cubes"></i> Frameworks & Libraries</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">React (learning)</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Tailwind CSS</span>
+                        <span class="skill-badge">jQuery</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Vercel</span>
+                        <span class="skill-badge">Figma</span>
+                        
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-heart"></i> Soft Skills</h3>
+                    <div class="skill-badges">
+                        <span class="skill-badge">Problem-Solving</span>
+                        <span class="skill-badge">Communication</span>
+                        <span class="skill-badge">Time Management</span>
+                        <span class="skill-badge">Teamwork</span>
+                        <span class="skill-badge">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END SKILLS SECTION ===== -->
+
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects-section section" id="projects">
+        <div class="section-container">
+            <h2 class="section-title reveal">
+                My <span class="accent-text">Projects</span>
+            </h2>
+            <p class="section-subtitle reveal">Things I've built with passion and curiosity</p>
+
+            <!-- Featured Projects (shown first) -->
+            <div class="projects-featured reveal" id="featuredProjectsContainer">
+                <h3 class="projects-subheading">⭐ Featured Projects</h3>
+                <div class="projects-grid" id="featuredProjectsGrid">
+                    <!-- Dynamically filled by render-projects.js -->
+                </div>
+            </div>
+
+            <!-- All Projects -->
+            <div class="projects-all reveal" id="allProjectsContainer">
+                <h3 class="projects-subheading">📁 All Projects</h3>
+                <div class="projects-grid" id="allProjectsGrid">
+                    <!-- Dynamically filled by render-projects.js -->
+                </div>
+            </div>
+
+            <!-- Show More / Show Less Button -->
+            <!-- Appears only if there are more than 6 total projects -->
+            <div class="projects-toggle-wrapper reveal" id="projectsToggleWrapper" style="display:none;">
+                <button class="btn btn-outline" id="projectsToggleBtn">
+                    Show More <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ===== END PROJECTS SECTION ===== -->
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section section" id="contact">
+        <div class="section-container">
+            <h2 class="section-title reveal">
+                Get In <span class="accent-text">Touch</span>
+            </h2>
+            <p class="section-subtitle reveal">I'm always open to new opportunities and conversations</p>
+
+            <div class="contact-content reveal">
+                <!-- Contact Info Cards -->
+                <div class="contact-info">
+                    <!-- Email card -->
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:gm072775@gmail.com">gm072775@gmail.com</a>
+                    </div>
+                    <!-- LinkedIn card -->
+                    <div class="contact-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/gunjan-mishra-325b87410" target="_blank"
+                            rel="noopener noreferrer">Connect with me</a>
+                    </div>
+                    <!-- GitHub card (replaces Location) -->
+                    <div class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/gunjan9711" target="_blank" rel="noopener noreferrer">View my
+                            repos</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                
+                <form class="contact-form" id="contactForm">
+
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="eaa0fff3-f03b-4cef-8160-ca317e557522">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Let's work together!">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===== END CONTACT SECTION ===== -->
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <!-- Social Icons Row -->
+            <div class="footer-socials">
+                <a href="https://github.com/gunjan9711" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                    class="social-icon-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gunjan-mishra-325b87410" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn" class="social-icon-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a> -->
+                
+            </div>
+
+            <p class="footer-text">
+                &copy; All rights reserved. <span id="currentYear">2026</span> Gunjan Mishra. Made with ❤️ using HTML,
+                CSS, and JavaScript.
+            </p>
+
+            <!-- Back to Top Button -->
+            <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+    <!-- ===== END FOOTER ===== -->
+
+
+    <!-- ===== SCRIPTS ===== -->
+    <!--
+        Order matters: projects-data.js defines the data,
+        render-projects.js uses it to build the DOM,
+        main.js handles all other interactivity.
+    -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/render-projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
