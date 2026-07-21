@@ -39,6 +39,16 @@ const projects = [
         image: "assets/projects/devkit.jpg",
         githubLink: "https://github.com/devilns9711/developers-emergency-kit.git",
         liveLink: "https://developers-emergency-kit.vercel.app/",
+        featured: false
+    },
+    {
+        id: 3,
+        title: "Smart Calculators",
+        description: "A collection of everyday calculators — EMI, Percentage, Age, GPA, BMI, Currency, Tip, Discount. All in one place, privacy-",
+        techStack: ["HTML", "CSS", "JavaScript"],
+        image: "assets/projects/smartcalc.png",
+        githubLink: "https://github.com/Gunjan9711/Smart-Calculators.git",
+        liveLink: "https://smart-calculators-sigma.vercel.app/",
         featured: true
     },
     
