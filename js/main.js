@@ -25,21 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---------- Mobile Menu Toggle ----------
     if (hamburger && navLinksContainer) {
-        hamburger.addEventListener('click', () => {
-            navLinksContainer.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !expanded);
-        });
+    hamburger.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+        hamburger.setAttribute('aria-expanded', !expanded);
+    });
 
-        // Close menu when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinksContainer.classList.remove('active');
-                hamburger.classList.remove('active');
-                hamburger.setAttribute('aria-expanded', 'false');
-            });
-        });
+    // Close the mobile menu when a regular nav link is clicked,
+    // but NOT when the dropdown toggle is clicked.
+    navLinksContainer.addEventListener('click', (e) => {
+        const link = e.target.closest('.nav-link');
+        if (link && !link.classList.contains('dropdown-toggle')) {
+            navLinksContainer.classList.remove('active');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    });
     }
 
     // ---------- Smooth Scroll & Active Link ----------
