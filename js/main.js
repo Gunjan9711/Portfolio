@@ -134,49 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ---------- Contact Form  ----------
-    // if (contactForm) {
-    //     contactForm.addEventListener('submit', async (e) => {
-    //         e.preventDefault();
-
-    //         // Show subtle feedback (optional)
-    //         const submitBtn = contactForm.querySelector('button[type="submit"]');
-    //         const originalText = submitBtn.innerHTML;
-    //         submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-    //         submitBtn.disabled = true;
-
-    //         const formData = new FormData(contactForm);
-    //         const data = {
-    //             name: formData.get('name'),
-    //             email: formData.get('email'),
-    //             subject: formData.get('subject'),
-    //             message: formData.get('message')
-    //         };
-
-    //         try {
-    //             const response = await fetch('/api/send-email', {
-    //                 method: 'POST',
-    //                 headers: { 'Content-Type': 'application/json' },
-    //                 body: JSON.stringify(data)
-    //             });
-
-    //             if (response.ok) {
-    //                 alert('✅ Message sent successfully! I\'ll get back to you soon.');
-    //                 contactForm.reset();
-    //             } else {
-    //                 const err = await response.json();
-    //                 alert('❌ Failed: ' + (err.message || 'Please try again later.'));
-    //             }
-    //         } catch (error) {
-    //             console.error('Network error:', error);
-    //             alert('❌ Something went wrong. Check your connection.');
-    //         } finally {
-    //             submitBtn.innerHTML = originalText;
-    //             submitBtn.disabled = false;
-    //         }
-    //     });
-    // }
-
-    // const contactForm = document.getElementById("contactForm");
+    
 
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
